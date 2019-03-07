@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
   get 'articles/index'
   resources :articles
-  root 'articles/index'
+  root 'articles#index'
 end

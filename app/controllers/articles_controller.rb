@@ -8,7 +8,7 @@ class ArticlesController < ApplicationController
   end
 
   def create
-    @article = Article.new(params.require(:article).permit(:author, :title, :body))
+    @article = Article.new(params.require(:article).permit(:author, :title, :body, :picture))
     @article.save
     redirect_to @article
   end

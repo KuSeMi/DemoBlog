@@ -13,4 +13,8 @@
   <%= @article.body %>
 </p>
 
+<p>
+  <%= image_tag(@article.picture.url) %>
+</p>
+
 <%= link_to 'Back', articles_path %>

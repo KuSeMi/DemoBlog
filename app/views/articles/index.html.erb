@@ -13,6 +13,7 @@
           </div>
           <div class="content">
             <%= article.body  %>
+            <%= truncate(article.body, length: 150, separator: ' ') %>
           </div>
           <div class="comment-count">
             <span class="tag is-rounded"></span>
